@@ -1,0 +1,74 @@
+/********************************************************************
+created:    2011/04/12
+filename:
+file path:
+file base:  KCAnimation
+file ext:   h
+author:     黄永恒
+
+purpose:   Surface动画类
+*********************************************************************/
+#pragma once
+#include "type.h"
+#include "Configure.h"
+#include "HMIDev.h"
+#include "KC3DWorld.h"
+
+typedef enum
+{
+	eLeftToRight = 0,  // 从左至右
+	eRightToLeft		// 从右至左
+}eDirect;
+
+typedef enum
+{
+	eBack = 0,  // 返回上一层
+	eMain		// 返回主界面
+}eLayer;
+
+typedef enum
+{
+	eOpacity = 0,  //只有透明度的变化
+	eOpacityAndSize  //透明度变化大小从中间向四周变化
+}eShadowType;
+
+class CYPRESS_DLL_API KCAnimation
+{
+public:
+    KCAnimation(void);
+    ~KCAnimation(void);
+	
+	// 控件滑入
+	void MoveIn(eDirect Direct,KCBaseCtrl * pInCtrl,KCWindow* pDlg);
+	/*****************************
+	// 控件滑出
+	bBack为TRUE表示返回上一级
+	bBack为FALSE表示返回主界面
+	*****************************/
+	void MoveOut(eDirect Direct,eLayer Layer,KCBaseCtrl * pOutCtrl,KCWindow* pDlg);
+#if 0
+	// 开启遮罩
+	void ShadowIn(KCBaseCtrl * pTxtCtrl, eShadowType type = eOpacityAndSize);
+	// 关闭遮罩
+	void ShadowOut(KCBaseCtrl * pTxtCtrl ,KCWindow* pDlg,eShadowType type = eOpacityAndSize);
+#endif
+	// 3D旋转
+	void Rotation3D(IReSurface* pCurSurf,IReSurface* pNextSurf,KCBaseCtrl* pCtrl,KCWindow* pDlg);
+	kn_int RegularAngle(kn_int angle);
+
+	// 淡入淡出效果
+	void FadeInOut(IReSurface* pCurSurf,IReSurface* pNextSurf,KCBaseCtrl* pCtrl,KCWindow* pDlg);
+
+	IReSurface*& GetScreenBakSur();
+	IReSurface*& GetScreenTmpSur();
+
+private:
+	// 初始化的屏幕Surface
+	IReSurface* m_pScreenBakSur;
+	// 多层Option之间滑动的
+	IReSurface* m_pScreenTmpSur;
+	//备份遮盖前的屏幕surface
+	IReSurface* m_pScreenShadowBakSurf;
+	// 3D
+	KC3DWorld m_3dWorld;
+};

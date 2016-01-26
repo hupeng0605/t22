@@ -1,0 +1,50 @@
+<VSPerformanceSession Version="1.00">
+  <Options>
+    <Solution>BT.sln</Solution>
+    <CollectionMethod>Instrumentation</CollectionMethod>
+    <AllocationMethod>None</AllocationMethod>
+    <AddReport>true</AddReport>
+    <UniqueReport>Timestamp</UniqueReport>
+    <SamplingMethod>Cycles</SamplingMethod>
+    <CycleCount>10000000</CycleCount>
+    <PageFaultCount>10</PageFaultCount>
+    <SysCallCount>10</SysCallCount>
+    <SamplingCounter PlatformID="00000000" CounterID="0000000000000000" ReloadValue="00000000000f4240" />
+    <RelocateBinaries>false</RelocateBinaries>
+    <HardwareCounters EnableHWCounters="false" />
+    <EtwSettings />
+  </Options>
+  <PreinstrumentEvent>
+    <InstrEventExclude>false</InstrEventExclude>
+  </PreinstrumentEvent>
+  <PostinstrumentEvent>
+    <InstrEventExclude>false</InstrEventExclude>
+  </PostinstrumentEvent>
+  <Binaries>
+    <ProjBinary>
+      <Path>..\..\bin\786sdk (armv4i)_debug\BT.exe</Path>
+      <ArgumentTimestamp>01/01/0001 00:00:00</ArgumentTimestamp>
+      <Instrument>true</Instrument>
+      <LaunchProject>true</LaunchProject>
+      <LaunchMethod>Executable</LaunchMethod>
+      <ExecutablePath>%CSIDL_PROGRAM_FILES%\BT\BT.exe</ExecutablePath>
+      <StartupDirectory>e:\work\AVCN\bin\786sdk (armv4i)_debug\;;"e:\work\AVCN\bin\786sdk (armv4i)_debug";"e:\work\AVCN\bin\786sdk (armv4i)_debug";"e:\work\AVCN\bin\786sdk (armv4i)_debug";"e:\work\AVCN\bin\786sdk (armv4i)_debug";"d:\Program Files\Windows CE Tools\wce600\786SDK\Lib\ARMV4I";"d:\Program Files\Windows CE Tools\wce600\786SDK\Lib\ARMV4I";"d:\Program Files\Windows CE Tools\wce600\786SDK\Lib\ARMV4I";"d:\Program Files\Windows CE Tools\wce600\786SDK\Lib\ARMV4I";"d:\Program Files\Windows CE Tools\wce600\786SDK\Lib\ARMV4I";"d:\Program Files\Windows CE Tools\wce600\786SDK\Lib\ARMV4I";D:\Program Files\Microsoft Visual Studio 8\VC\ce\dll</StartupDirectory>
+      <Arguments />
+      <NetAppHost>IIS</NetAppHost>
+      <PreinstrumentEvent>
+        <InstrEventExclude>false</InstrEventExclude>
+      </PreinstrumentEvent>
+      <PostinstrumentEvent>
+        <InstrEventExclude>false</InstrEventExclude>
+      </PostinstrumentEvent>
+      <ProjRef>{7201D7DD-78C8-4F2B-A614-9D03503E425A}|BT.vcproj</ProjRef>
+      <ProjPath>BT.vcproj</ProjPath>
+      <ProjName>BT</ProjName>
+    </ProjBinary>
+  </Binaries>
+  <Launches>
+    <ProjBinary>
+      <Path>:PB:{7201D7DD-78C8-4F2B-A614-9D03503E425A}|BT.vcproj</Path>
+    </ProjBinary>
+  </Launches>
+</VSPerformanceSession>

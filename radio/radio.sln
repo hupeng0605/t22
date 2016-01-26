@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "radio", "radio.vcproj", "{78A1EACC-894B-4978-9EB1-1FC256229623}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|786SDK (ARMV4I) = Debug|786SDK (ARMV4I)
+		Debug|Win32 = Debug|Win32
+		Release|786SDK (ARMV4I) = Release|786SDK (ARMV4I)
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78A1EACC-894B-4978-9EB1-1FC256229623}.Debug|786SDK (ARMV4I).ActiveCfg = Debug|786SDK (ARMV4I)
+		{78A1EACC-894B-4978-9EB1-1FC256229623}.Debug|786SDK (ARMV4I).Build.0 = Debug|786SDK (ARMV4I)
+		{78A1EACC-894B-4978-9EB1-1FC256229623}.Debug|786SDK (ARMV4I).Deploy.0 = Debug|786SDK (ARMV4I)
+		{78A1EACC-894B-4978-9EB1-1FC256229623}.Debug|Win32.ActiveCfg = Debug|Win32
+		{78A1EACC-894B-4978-9EB1-1FC256229623}.Debug|Win32.Build.0 = Debug|Win32
+		{78A1EACC-894B-4978-9EB1-1FC256229623}.Release|786SDK (ARMV4I).ActiveCfg = Release|786SDK (ARMV4I)
+		{78A1EACC-894B-4978-9EB1-1FC256229623}.Release|786SDK (ARMV4I).Build.0 = Release|786SDK (ARMV4I)
+		{78A1EACC-894B-4978-9EB1-1FC256229623}.Release|786SDK (ARMV4I).Deploy.0 = Release|786SDK (ARMV4I)
+		{78A1EACC-894B-4978-9EB1-1FC256229623}.Release|Win32.ActiveCfg = Release|Win32
+		{78A1EACC-894B-4978-9EB1-1FC256229623}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
